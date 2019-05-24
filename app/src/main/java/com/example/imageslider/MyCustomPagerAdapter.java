@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.jsibbold.zoomage.ZoomageView;
+
+
 public class MyCustomPagerAdapter extends PagerAdapter{
     Context context;
     int images[];
@@ -42,6 +45,14 @@ public class MyCustomPagerAdapter extends PagerAdapter{
         View itemView = layoutInflater.inflate(R.layout.item, container, false);
 
         ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
+
+
+
+
+
+
+
+
         imageView.setImageResource(images[position]);
 
 

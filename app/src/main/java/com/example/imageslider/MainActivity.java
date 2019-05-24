@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
-    int images[] = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4,R.drawable.img5,R.drawable.img1,R.drawable.img2};
+    int images[] = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4,R.drawable.img5};
     MyCustomPagerAdapter myCustomPagerAdapter;
 
     @Override
@@ -35,5 +35,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+
     }
+
+
+
+
+
 }
