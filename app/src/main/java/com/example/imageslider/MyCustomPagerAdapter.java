@@ -44,30 +44,20 @@ public class MyCustomPagerAdapter extends PagerAdapter{
     public Object instantiateItem(ViewGroup container, final int position) {
         View itemView = layoutInflater.inflate(R.layout.item, container, false);
 
-        ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
-
-
-
-
-
-
-
+//        ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
+        ZoomageView imageView = (ZoomageView) itemView.findViewById(R.id.imageView);
 
         imageView.setImageResource(images[position]);
-
-
-
-
 
         container.addView(itemView);
 
         //listening to image click
-        imageView.setOnClickListener(new View.OnClickListener() {
+      /*  imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "you clicked image " + (position + 1), Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
         return itemView;
     }

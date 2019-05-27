@@ -4,10 +4,14 @@ import android.content.Context;
 import android.graphics.Matrix;
 import android.graphics.PointF;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
+
+
+
 
 public class TouchImageView extends android.support.v7.widget.AppCompatImageView {
 
@@ -20,6 +24,7 @@ public class TouchImageView extends android.support.v7.widget.AppCompatImageView
     int mode = NONE;
 
     // Remember some things for zooming
+
     PointF last = new PointF();
     PointF start = new PointF();
     float minScale = 1f;
@@ -104,12 +109,11 @@ public class TouchImageView extends android.support.v7.widget.AppCompatImageView
         });
     }
 
-    public void setMaxZoom(float x) {
+  /*  public void setMaxZoom(float x) {
         maxScale = x;
-    }
+    }*/
 
-    private class ScaleListener extends
-            ScaleGestureDetector.SimpleOnScaleGestureListener {
+    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
         @Override
         public boolean onScaleBegin(ScaleGestureDetector detector) {
             mode = ZOOM;
