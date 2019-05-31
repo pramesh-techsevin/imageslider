@@ -14,10 +14,13 @@ public class Test extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-
+	//test
 
         ZoomageView imageZoom = (ZoomageView) findViewById(R.id.myZoomageView);
         imageZoom.setImageResource(R.drawable.img1);
+
+
+	//2nd Test
 
     }
 }
