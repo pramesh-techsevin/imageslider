@@ -17,7 +17,7 @@ public class Test extends AppCompatActivity {
 
 
         ZoomageView imageZoom = (ZoomageView) findViewById(R.id.myZoomageView);
-       // imageZoom.setImageResource(R.drawable.img1);
+        imageZoom.setImageResource(R.drawable.img1);
 
     }
 }
