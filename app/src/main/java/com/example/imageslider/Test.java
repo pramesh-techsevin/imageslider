@@ -21,7 +21,7 @@ public class Test extends AppCompatActivity {
 
 
 	//2nd Test
-//3rd Test// New Code But Error Solved
+//3rd Test// Old Code  But it is right
 
     }
 }
